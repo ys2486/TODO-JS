@@ -64,10 +64,6 @@ function todoComplete(){
 //行を削除する処理（「完了」ボタン「削除」ボタン「戻す」ボタンから呼ばれ実行される）
 function deleteRow(deleteTargetChild){
     const parentNode = deleteTargetChild.parentNode;
-    
-    while(parentNode.lastChild){
-        parentNode.removeChild(parentNode.lastChild);
-    }
     parentNode.remove();
 }
 
